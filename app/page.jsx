@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
-import { Bell, Icon, LogIn, Rabbit, Shield } from "lucide-react";
+import { Bell, Icon, LogIn, Rabbit, Shield, TrendingDown } from "lucide-react";
 
 import { Inter } from "next/font/google";
 import AddProductForm from "@/components/AddProductForm";
@@ -62,7 +62,7 @@ export default async function Home() {
     <div>
       <AddProductForm user={user} />
     </div>
-    <div>
+    <div className="mb-10">
       {products.length === 0 && (
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-16">
           {FEATURES.map(({ icon: Icon, title, description }) => (
@@ -80,5 +80,19 @@ export default async function Home() {
         </div>
       )}
     </div>
+    {/* Empty State */}
+    {user && products.length === 0 && (
+      <section className="max-w-2xl mx-auto px-4 pb-20 text-center">
+        <div className="bg-white rounded-xl border-2 border-dashed border-gray-300 p-12">
+          <TrendingDown className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            No products yet
+          </h3>
+          <p className="text-gray-600">
+            Add your first product above to start tracking prices!
+          </p>
+        </div>
+      </section>
+    )}
   </main>;
 }
