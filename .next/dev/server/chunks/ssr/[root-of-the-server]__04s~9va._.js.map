@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/udayr/Desktop/Projects/pricelens/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,mIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/udayr/Desktop/Projects/pricelens/app/page.jsx"],"sourcesContent":["import Image from \"next/image\";\nexport default function Home() {\n  return <main className=\"min-h-screen bg-linear-to-br from-green-50 via-white to-orange-50\">\n    <header className=\"bg-white/80 backdrop-blur-sm border-b border-gray-200 flex justify-between items-center\">\n      <div>\n      \n        <div className=\"flex items-center gap-3\">\n          <Image\n            src={\"/logo-green-trans.png\"}\n            alt=\"Logo\"\n            width={200}\n            height={50}\n            className=\"mix-blend-multiply\"\n          />\n        </div>\n      </div>\n    </header>\n  \n  </main>;\n}\n"],"names":["Home","className","src","alt","width","height"],"mappings":";;;;;AAAA;;;AACe,SAASA;IACtB,qBAAO,8OAAC;QAAKC,WAAU;kBACrB,cAAA,8OAAC;YAAOA,WAAU;sBAChB,cAAA,8OAAC;0BAEC,cAAA,8OAAC;oBAAIA,WAAU;8BACb,cAAA,8OAAC,wIAAK;wBACJC,KAAK;wBACLC,KAAI;wBACJC,OAAO;wBACPC,QAAQ;wBACRJ,WAAU;;;;;;;;;;;;;;;;;;;;;;;;;;AAOtB"}}]
+}
